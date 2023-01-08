@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Logo.png" alt="Logo" id="logo">
+        <h1>Login Form</h1>
+        <form>
+            <div class="section">
+                <label for="login-id">Login ID:</label><br>
+                <input type="text" id="login-id" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" required>
+            </div>
+            <label for="remember-me">Remember Me</label>
+            <input type="checkbox" id="remember-me"><br>
+            <input type="button" value="OK" onclick="login()">
+            <input type="button" value="Cancel" onclick="clear()">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

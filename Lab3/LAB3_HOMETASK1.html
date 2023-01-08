@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form>
+        <label for="login-id">Login ID:</label><br>
+        <input type="text" id="login-id" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" required>
+        <br><br>
+        <input type="button" value="OK" onclick="login()">
+    </form>
+    <script>
+        function login() {
+            window.alert("Login successful!");
+            window.open("student-profile.html?studentId=2020-SE-272", "_blank");
+        }
+    </script>
+</body>
+</html>

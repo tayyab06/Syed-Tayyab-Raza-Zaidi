@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Student Profile</title>
+</head>
+<body>
+    <h1>Student Profile</h1>
+    <p>
+        Welcome to my student profile! My name is Tayyab Raza and my student ID is 
+        <span id="student-id"></span>. I am currently a student at 
+        <span id="university-name"></span> University.
+    </p>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const studentId = urlParams.get("studentId");
+        if (!studentId) {
+            window.location.replace("registration-form.html");
+        }
+        document.getElementById("student-id").innerHTML = studentId;
+        document.getElementById("university-name").innerHTML = "Sir Syed";
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form>
+        <label for="login-id">Login ID:</label><br>
+        <input type="text" id="login-id" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" required>
+        <br><br>
+        <label for="remember-me">Remember Me</label>
+        <input type="checkbox" id="remember-me"><br>
+        <input type="button" value="OK" id="ok-button" onclick="login()">
+    </form>
+    <div id="wait-image" style="display: none;">
+        <img src="wait.gif" alt="Wait">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
